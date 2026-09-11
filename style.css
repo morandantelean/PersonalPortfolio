@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    background-color: #bbdef1;
+}
+
+a:focus {
+  outline: 3px solid #a944ec;
+}
+
+header {
+    background-color: #1c6cf6;
+    color: #000000;
+    padding: 2.5rem 1.25rem;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 3.125rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+h3{
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+}
+
+p{
+    font-size: 1.10rem;
+}
+
+a {
+  color: #0936b1;
+}
+
+a:hover {
+  color: #07033b;
+  text-decoration: underline;
+}
+
+nav {
+    background-color: #5f8fe0;    
+    border-bottom: 1px solid #446fef;
+}
+ 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+nav a {
+    color: #222324;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.3125rem 0.625rem;
+}
+ 
+nav a:hover {
+    background-color: #9bbce7;
+    border-radius: 5px;
+    text-decoration: none;
+}   
+
+main {
+    max-width: 50rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+ 
+section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #eca6a6;
+}
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+ 
+#skills li {
+    background-color: #f9acac;
+    border: 1px solid #e52929;
+    text-align: center;
+    padding: 1.125rem 0.9375rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3125rem;
+    flex: 1 1 auto;
+}
+
+#projects .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 0.9375rem;
+}
+
+.project-card {
+    background-color: #f9acac;
+    border: 1px solid #e52929;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}   
+ 
+.project-card:hover {
+    border-color: #16295d;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact {
+    border-bottom: none;
+}
+
+#contact p {
+    margin-bottom: 0;
+}
+
+#contact ul {
+    margin-top: 0;
+}
+
+#contact li {
+    margin-bottom: 0.1875rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    color: #001570;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.625rem;
+    }
+ 
+    header {
+        padding: 1.25rem 0.625rem;
+    } 
+ 
+    section {
+        padding: 1.25rem 0;
+    }
+
+    #projects .project-list {
+        grid-template-columns: 1fr;
+    }
+}
